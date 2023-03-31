@@ -1,0 +1,11 @@
+{
+  "Settings": {
+    "Admin Permission": "talkingnpc.admin",
+    "Auto-Close Dialog Distance": 2.6
+  },
+  "Version": {
+    "Major": 1,
+    "Minor": 2,
+    "Patch": 1
+  }
+}

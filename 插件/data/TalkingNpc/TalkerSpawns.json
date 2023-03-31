@@ -1,0 +1,28 @@
+{
+  "测试员": {
+    "Conversation File": "default",
+    "Position": {
+      "x": -22.2740479,
+      "y": 0.239059448,
+      "z": 11.5717773
+    },
+    "Rotation": {
+      "x": 0.0,
+      "y": 345.284851,
+      "z": 0.0
+    },
+    "Name": "测试员",
+    "Kit": null,
+    "NpcUserID": 701233299456,
+    "CallOnUseNpc": false,
+    "Monument": "assets/bundled/prefabs/autospawn/monument/medium/compound.prefab",
+    "Vending Machine Configuration Files": [],
+    "Umod Marker Manager": {
+      "enabled": false,
+      "displayName": "newNpc",
+      "radius": 0.4,
+      "colorMarker": "00FFFF",
+      "colorOutline": "00FFFFFF"
+    }
+  }
+}

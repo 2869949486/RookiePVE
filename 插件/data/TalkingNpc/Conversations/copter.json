@@ -1,0 +1,197 @@
+{
+  "0": {
+    "Message": "Welcome to my shop $displayName. How can I help you?",
+    "Message Display Time (seconds) - Only used if there are no responses": 2.0,
+    "Responses": [
+      {
+        "Message": "I would like to buy a copter.",
+        "Needs Permission (null = No)": null,
+        "Player Commands": [],
+        "Server Commands": [],
+        "Next Message (null = Close UI)": 1,
+        "Price": 0,
+        "Currency": {
+          "Item ID": -932201673,
+          "Skin ID": 0
+        },
+        "Insufficient Funds Message (null = Close UI)": null,
+        "Cooldown": 0,
+        "Server Wide Cooldown": false
+      },
+      {
+        "Message": "I am just browsing.",
+        "Needs Permission (null = No)": null,
+        "Player Commands": [],
+        "Server Commands": [],
+        "Next Message (null = Close UI)": 4,
+        "Price": 0,
+        "Currency": {
+          "Item ID": -932201673,
+          "Skin ID": 0
+        },
+        "Insufficient Funds Message (null = Close UI)": null,
+        "Cooldown": 0,
+        "Server Wide Cooldown": false
+      }
+    ]
+  },
+  "1": {
+    "Message": "A copter you say. Which style copter would you like?",
+    "Message Display Time (seconds) - Only used if there are no responses": 2.0,
+    "Responses": [
+      {
+        "Message": "I would like a minicopter.",
+        "Needs Permission (null = No)": null,
+        "Player Commands": [],
+        "Server Commands": [],
+        "Next Message (null = Close UI)": 2,
+        "Price": 0,
+        "Currency": {
+          "Item ID": -932201673,
+          "Skin ID": 0
+        },
+        "Insufficient Funds Message (null = Close UI)": null,
+        "Cooldown": 0,
+        "Server Wide Cooldown": false
+      },
+      {
+        "Message": "I would like a scrapcopter.",
+        "Needs Permission (null = No)": null,
+        "Player Commands": [],
+        "Server Commands": [],
+        "Next Message (null = Close UI)": 3,
+        "Price": 0,
+        "Currency": {
+          "Item ID": -932201673,
+          "Skin ID": 0
+        },
+        "Insufficient Funds Message (null = Close UI)": null,
+        "Cooldown": 0,
+        "Server Wide Cooldown": false
+      }
+    ]
+  },
+  "2": {
+    "Message": "That is a nice choice. Do you want to buy this minicopter?",
+    "Message Display Time (seconds) - Only used if there are no responses": 2.0,
+    "Responses": [
+      {
+        "Message": "Here is my 250 scrap.",
+        "Needs Permission (null = No)": null,
+        "Player Commands": [
+          "talking_npc vehicle spawn minicopter $npcName"
+        ],
+        "Server Commands": [],
+        "Next Message (null = Close UI)": 5,
+        "Price": 250,
+        "Currency": {
+          "Item ID": -932201673,
+          "Skin ID": 0
+        },
+        "Insufficient Funds Message (null = Close UI)": 6,
+        "Cooldown": 0,
+        "Server Wide Cooldown": false
+      },
+      {
+        "Message": "I changed my mind.",
+        "Needs Permission (null = No)": null,
+        "Player Commands": [],
+        "Server Commands": [],
+        "Next Message (null = Close UI)": 5,
+        "Price": 0,
+        "Currency": {
+          "Item ID": -932201673,
+          "Skin ID": 0
+        },
+        "Insufficient Funds Message (null = Close UI)": null,
+        "Cooldown": 0,
+        "Server Wide Cooldown": false
+      }
+    ]
+  },
+  "3": {
+    "Message": "That is a nice choice. Do you want to buy this scrapcopter?",
+    "Message Display Time (seconds) - Only used if there are no responses": 2.0,
+    "Responses": [
+      {
+        "Message": "Here is my 350 scrap.",
+        "Needs Permission (null = No)": null,
+        "Player Commands": [
+          "talking_npc vehicle spawn scraptransporthelicopter $npcName"
+        ],
+        "Server Commands": [],
+        "Next Message (null = Close UI)": 5,
+        "Price": 350,
+        "Currency": {
+          "Item ID": -932201673,
+          "Skin ID": 0
+        },
+        "Insufficient Funds Message (null = Close UI)": 6,
+        "Cooldown": 0,
+        "Server Wide Cooldown": false
+      },
+      {
+        "Message": "I changed my mind.",
+        "Needs Permission (null = No)": null,
+        "Player Commands": [],
+        "Server Commands": [],
+        "Next Message (null = Close UI)": 4,
+        "Price": 0,
+        "Currency": {
+          "Item ID": -932201673,
+          "Skin ID": 0
+        },
+        "Insufficient Funds Message (null = Close UI)": null,
+        "Cooldown": 0,
+        "Server Wide Cooldown": false
+      }
+    ]
+  },
+  "4": {
+    "Message": "Let me know if there's anything I can do to help!",
+    "Message Display Time (seconds) - Only used if there are no responses": 2.0,
+    "Responses": []
+  },
+  "5": {
+    "Message": "Go get your ride before someone steals it and please stop by again.",
+    "Message Display Time (seconds) - Only used if there are no responses": 2.0,
+    "Responses": [
+      {
+        "Message": "See you later.",
+        "Needs Permission (null = No)": null,
+        "Player Commands": [],
+        "Server Commands": [],
+        "Next Message (null = Close UI)": null,
+        "Price": 0,
+        "Currency": {
+          "Item ID": -932201673,
+          "Skin ID": 0
+        },
+        "Insufficient Funds Message (null = Close UI)": null,
+        "Cooldown": 0,
+        "Server Wide Cooldown": false
+      }
+    ]
+  },
+  "6": {
+    "Message": "I am sorry you do not have enough scrap.",
+    "Message Display Time (seconds) - Only used if there are no responses": 2.0,
+    "Responses": [
+      {
+        "Message": "I will come back later.",
+        "Needs Permission (null = No)": null,
+        "Player Commands": [],
+        "Server Commands": [],
+        "Next Message (null = Close UI)": null,
+        "Price": 0,
+        "Currency": {
+          "Item ID": -932201673,
+          "Skin ID": 0
+        },
+        "Insufficient Funds Message (null = Close UI)": null,
+        "Cooldown": 0,
+        "Server Wide Cooldown": false
+      }
+    ]
+  }
+}

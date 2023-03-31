@@ -1,0 +1,262 @@
+{
+  "0": {
+    "Message": "嗨！ $displayName , 服务器还在制作中 ， 别来沾边!",
+    "Message Display Time (seconds) - Only used if there are no responses": 2.0,
+    "Responses": [
+      {
+        "Message": "你算老几？",
+        "Needs Permission (null = No)": null,
+        "Player Commands": [],
+        "Server Commands": [
+          "say $userID",
+          "say $displayName"
+        ],
+        "Next Message (null = Close UI)": 1,
+        "Price": 0,
+        "Currency": {
+          "Item ID": -932201673,
+          "Skin ID": 0
+        },
+        "Insufficient Funds Message (null = Close UI)": null,
+        "Cooldown": 0,
+        "Server Wide Cooldown": false
+      },
+      {
+        "Message": "好的，我滚。。。",
+        "Needs Permission (null = No)": null,
+        "Player Commands": [],
+        "Server Commands": [],
+        "Next Message (null = Close UI)": 5,
+        "Price": 0,
+        "Currency": {
+          "Item ID": -932201673,
+          "Skin ID": 0
+        },
+        "Insufficient Funds Message (null = Close UI)": null,
+        "Cooldown": 0,
+        "Server Wide Cooldown": false
+      },
+      {
+        "Message": "好的，我滚。。。",
+        "Needs Permission (null = No)": null,
+        "Player Commands": [],
+        "Server Commands": [],
+        "Next Message (null = Close UI)": 5,
+        "Price": 0,
+        "Currency": {
+          "Item ID": -932201673,
+          "Skin ID": 0
+        },
+        "Insufficient Funds Message (null = Close UI)": null,
+        "Cooldown": 0,
+        "Server Wide Cooldown": false
+      },
+      {
+        "Message": "好的，我滚。。。",
+        "Needs Permission (null = No)": null,
+        "Player Commands": [],
+        "Server Commands": [],
+        "Next Message (null = Close UI)": 5,
+        "Price": 0,
+        "Currency": {
+          "Item ID": -932201673,
+          "Skin ID": 0
+        },
+        "Insufficient Funds Message (null = Close UI)": null,
+        "Cooldown": 0,
+        "Server Wide Cooldown": false
+      },
+      {
+        "Message": "好的，我滚。。。",
+        "Needs Permission (null = No)": null,
+        "Player Commands": [],
+        "Server Commands": [],
+        "Next Message (null = Close UI)": 5,
+        "Price": 0,
+        "Currency": {
+          "Item ID": -932201673,
+          "Skin ID": 0
+        },
+        "Insufficient Funds Message (null = Close UI)": null,
+        "Cooldown": 0,
+        "Server Wide Cooldown": false
+      },
+      {
+        "Message": "好的，我滚。。。",
+        "Needs Permission (null = No)": null,
+        "Player Commands": [],
+        "Server Commands": [],
+        "Next Message (null = Close UI)": 5,
+        "Price": 0,
+        "Currency": {
+          "Item ID": -932201673,
+          "Skin ID": 0
+        },
+        "Insufficient Funds Message (null = Close UI)": null,
+        "Cooldown": 0,
+        "Server Wide Cooldown": false
+      }
+    ]
+  },
+  "1": {
+    "Message": "Im doing good how about you?",
+    "Message Display Time (seconds) - Only used if there are no responses": 2.0,
+    "Responses": [
+      {
+        "Message": "I am ok today.",
+        "Needs Permission (null = No)": null,
+        "Player Commands": [],
+        "Server Commands": [],
+        "Next Message (null = Close UI)": 2,
+        "Price": 0,
+        "Currency": {
+          "Item ID": -932201673,
+          "Skin ID": 0
+        },
+        "Insufficient Funds Message (null = Close UI)": null,
+        "Cooldown": 0,
+        "Server Wide Cooldown": false
+      },
+      {
+        "Message": "i dont know.",
+        "Needs Permission (null = No)": null,
+        "Player Commands": [],
+        "Server Commands": [],
+        "Next Message (null = Close UI)": 3,
+        "Price": 0,
+        "Currency": {
+          "Item ID": -932201673,
+          "Skin ID": 0
+        },
+        "Insufficient Funds Message (null = Close UI)": null,
+        "Cooldown": 0,
+        "Server Wide Cooldown": false
+      },
+      {
+        "Message": "Life stinks.",
+        "Needs Permission (null = No)": null,
+        "Player Commands": [],
+        "Server Commands": [],
+        "Next Message (null = Close UI)": 4,
+        "Price": 0,
+        "Currency": {
+          "Item ID": -932201673,
+          "Skin ID": 0
+        },
+        "Insufficient Funds Message (null = Close UI)": null,
+        "Cooldown": 0,
+        "Server Wide Cooldown": false
+      }
+    ]
+  },
+  "2": {
+    "Message": "That is a nice to hear?",
+    "Message Display Time (seconds) - Only used if there are no responses": 2.0,
+    "Responses": [
+      {
+        "Message": "I Will talk to you later",
+        "Needs Permission (null = No)": null,
+        "Player Commands": [],
+        "Server Commands": [],
+        "Next Message (null = Close UI)": 5,
+        "Price": 0,
+        "Currency": {
+          "Item ID": -932201673,
+          "Skin ID": 0
+        },
+        "Insufficient Funds Message (null = Close UI)": null,
+        "Cooldown": 0,
+        "Server Wide Cooldown": false
+      }
+    ]
+  },
+  "3": {
+    "Message": "Sorry to hear that?",
+    "Message Display Time (seconds) - Only used if there are no responses": 2.0,
+    "Responses": [
+      {
+        "Message": "I guess i will talk to you later.",
+        "Needs Permission (null = No)": null,
+        "Player Commands": [],
+        "Server Commands": [],
+        "Next Message (null = Close UI)": 5,
+        "Price": 0,
+        "Currency": {
+          "Item ID": -932201673,
+          "Skin ID": 0
+        },
+        "Insufficient Funds Message (null = Close UI)": null,
+        "Cooldown": 0,
+        "Server Wide Cooldown": false
+      }
+    ]
+  },
+  "4": {
+    "Message": "That to bad i hope you day gets better?",
+    "Message Display Time (seconds) - Only used if there are no responses": 2.0,
+    "Responses": [
+      {
+        "Message": "Thank you i will see you later.",
+        "Needs Permission (null = No)": null,
+        "Player Commands": [],
+        "Server Commands": [],
+        "Next Message (null = Close UI)": 5,
+        "Price": 0,
+        "Currency": {
+          "Item ID": -932201673,
+          "Skin ID": 0
+        },
+        "Insufficient Funds Message (null = Close UI)": null,
+        "Cooldown": 0,
+        "Server Wide Cooldown": false
+      }
+    ]
+  },
+  "5": {
+    "Message": "Let me know if there's anything I can do to help!",
+    "Message Display Time (seconds) - Only used if there are no responses": 2.0,
+    "Responses": []
+  },
+  "6": {
+    "Message": "Go get your ride before someone steals it and please stop by again.",
+    "Message Display Time (seconds) - Only used if there are no responses": 2.0,
+    "Responses": [
+      {
+        "Message": "See you later.",
+        "Needs Permission (null = No)": null,
+        "Player Commands": [],
+        "Server Commands": [],
+        "Next Message (null = Close UI)": null,
+        "Price": 0,
+        "Currency": {
+          "Item ID": -932201673,
+          "Skin ID": 0
+        },
+        "Insufficient Funds Message (null = Close UI)": null,
+        "Cooldown": 0,
+        "Server Wide Cooldown": false
+      }
+    ]
+  },
+  "7": {
+    "Message": "I am sorry you do not have enough scrap.",
+    "Message Display Time (seconds) - Only used if there are no responses": 2.0,
+    "Responses": [
+      {
+        "Message": "I will come back later.",
+        "Needs Permission (null = No)": null,
+        "Player Commands": [],
+        "Server Commands": [],
+        "Next Message (null = Close UI)": null,
+        "Price": 0,
+        "Currency": {
+          "Item ID": -932201673,
+          "Skin ID": 0
+        },
+        "Insufficient Funds Message (null = Close UI)": null,
+        "Cooldown": 0,
+        "Server Wide Cooldown": false
+      }
+    ]
+  }
+}
