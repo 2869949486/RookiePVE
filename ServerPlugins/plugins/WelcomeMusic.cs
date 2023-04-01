@@ -11,6 +11,7 @@ namespace Oxide.Plugins
     [Description("Play music for players when they join the server.")]
     class WelcomeMusic : RustPlugin
     {
+        List<BasePlayer> musicPlayers = new List<BasePlayer>();
         private ConfigData configData;
         private Dictionary<BasePlayer, BaseEntity> BoomBoxList = new Dictionary<BasePlayer, BaseEntity>();
         private JoinData joinData;
