@@ -220,47 +220,6 @@ namespace Oxide.Plugins
                 return;
             }
         }
-        //[ChatCommand("musicto")]
-        //void MusicToCommand(BasePlayer player, string command, string[] args)
-        //{
-        //    if (!permission.UserHasPermission(player.UserIDString, "welcomemusic.toplayer"))
-        //    {
-        //        player.ChatMessage($"[WelcomeMusic] You not have permission to use this command.");
-        //        return;
-        //    }
-        //    if (args.Length < 3)
-        //    {
-        //        player.ChatMessage($"[WelcomeMusic] Command Usage: /musicto <PlayerID> <MusicURL> <MusicDuration>!");
-        //        return;
-        //    }
-        //    var target = BasePlayer.Find(args[0]);
-        //    if (target == null)
-        //    {
-        //        player.ChatMessage("[WelcomeMusic] No player found.");
-        //        return;
-        //    }
-        //    if (BoomBoxList.ContainsKey(target))
-        //    {
-        //        player.ChatMessage("[WelcomeMusic] Currently playing music for target player, please try again later");
-        //        return;
-        //    }
-        //    if (!args[1].Contains("http"))
-        //    {
-        //        player.ChatMessage("[WelcomeMusic] Please enter a valid URL.");
-        //        return;
-        //    }
-        //    float duration;
-        //    if (!float.TryParse(args[2], out duration))
-        //    {
-        //        player.ChatMessage("[WelcomeMusic] Please enter a valid number.");
-        //        return;
-        //    }
-        //    else
-        //    {
-        //        MusicToPlayer(target, args[1], duration);
-        //        player.ChatMessage($"[WelcomeMusic] Now Playing for Player {target.displayName}: \nMusicURL: {args[1]}\nMusicDuration: {duration}.");
-        //    }
-        //}
         [ChatCommand("musicto")]
         void MusicToCommand(BasePlayer player, string command, string[] args)
         {
@@ -311,39 +270,6 @@ namespace Oxide.Plugins
                 player.ChatMessage($"[WelcomeMusic] Now Playing for Player {target.displayName}: \nMusicURL: {args[1]}\nMusicDuration: {duration}.");
             }
         }
-        //[ChatCommand("musicall")]
-        //void MusicToAllCommand(BasePlayer player, string command, string[] args)
-        //{
-        //    if (!permission.UserHasPermission(player.UserIDString, "welcomemusic.toplayer"))
-        //    {
-        //        player.ChatMessage($"[WelcomeMusic] You not have permission to use this command.");
-        //        return;
-        //    }
-        //    if (args.Length < 2)
-        //    {
-        //        player.ChatMessage($"[WelcomeMusic] Command Usage: /musicall <MusicURL> <MusicDuration>!");
-        //        return;
-        //    }
-        //    if (!args[0].Contains("http"))
-        //    {
-        //        player.ChatMessage("[WelcomeMusic] Please enter a valid URL.");
-        //        return;
-        //    }
-        //    float duration;
-        //    if (!float.TryParse(args[1], out duration))
-        //    {
-        //        player.ChatMessage("[WelcomeMusic] Please enter a valid number.");
-        //        return;
-        //    }
-        //    else
-        //    {
-        //        foreach (var item in BasePlayer.activePlayerList)
-        //        {
-        //            MusicToPlayer(item, args[0], duration);
-        //        }
-        //        player.ChatMessage($"[WelcomeMusic] Now Playing for all player: \nMusicURL: {args[0]}\nMusicDuration: {duration}.");
-        //    }
-        //}
         [ChatCommand("musicall")]
         void MusicToAllCommand(BasePlayer player, string command, string[] args)
         {
@@ -378,47 +304,6 @@ namespace Oxide.Plugins
                 player.ChatMessage($"[WelcomeMusic] Now Playing for all player: \nMusicURL: {args[0]}\nMusicDuration: {duration}.");
             }
         }
-        //[ConsoleCommand("musicto")]
-        //void MusicToConsoleCommand(ConsoleSystem.Arg arg)
-        //{
-        //    if (arg == null || arg.Args?.Length != 3)
-        //    {
-        //        Puts("Command Usage: musicto <PlayerID> <MusicURL> <MusicDuration>");
-        //        return;
-        //    }
-//
-        //    var argplayer = arg.Player();
-        //    if (arg.Connection != null)
-        //        if (!argplayer.IsAdmin)
-        //            return;
-        //    var target = BasePlayer.Find(arg.Args[0]);
-        //    if (target == null)
-        //    {
-        //        Puts("No player found.");
-        //        return;
-        //    }
-        //    if (BoomBoxList.ContainsKey(target))
-        //    {
-        //        Puts("Currently playing music for target player, please try again later");
-        //        return;
-        //    }
-        //    if (!arg.Args[1].Contains("http"))
-        //    {
-        //        Puts("Please enter a valid URL.");
-        //        return;
-        //    }
-        //    float duration;
-        //    if (!float.TryParse(arg.Args[2], out duration))
-        //    {
-        //        Puts("Please enter a valid number.");
-        //        return;
-        //    }
-        //    else
-        //    {
-        //        MusicToPlayer(target, arg.Args[1], duration);
-        //        Puts($"Now Playing for Player {target.displayName}: \nMusicURL: {arg.Args[1]}\nMusicDuration: {duration}.");
-        //    }
-        //}
         [ConsoleCommand("musicto")]
         void MusicToConsoleCommand(ConsoleSystem.Arg arg)
         {
@@ -432,7 +317,7 @@ namespace Oxide.Plugins
                 arg.ReplyWith("Command Usage: musicto <PlayerID> <MusicURL> <MusicDuration>");
                 return;
             }
-
+        
             var target = BasePlayer.Find(arg.Args[0]);
             if (target == null)
             {
@@ -461,38 +346,6 @@ namespace Oxide.Plugins
                 arg.ReplyWith($"Now playing for player {target.displayName}: \nMusicURL: {arg.Args[1]}\nMusicDuration: {duration}.");
             }
         }
-        //[ConsoleCommand("musicall")]
-        //void MusicToAllConsoleCommand(ConsoleSystem.Arg arg)
-        //{
-        //    if (arg == null || arg.Args?.Length != 2)
-        //    {
-        //        Puts("Command Usage: musicall <MusicURL> <MusicDuration>");
-        //        return;
-        //    }
-        //    var argplayer = arg.Player();
-        //    if (arg.Connection != null)
-        //        if (!argplayer.IsAdmin)
-        //            return;
-        //    if (!arg.Args[0].Contains("http"))
-        //    {
-        //        Puts("Please enter a valid URL.");
-        //        return;
-        //    }
-        //    float duration;
-        //    if (!float.TryParse(arg.Args[1], out duration))
-        //    {
-        //        Puts("Please enter a valid number.");
-        //        return;
-        //    }
-        //    else
-        //    {
-        //        foreach (var item in BasePlayer.activePlayerList)
-        //        {
-        //            MusicToPlayer(item, arg.Args[0], duration);
-        //        }
-        //        Puts($"Now Playing for all player: \nMusicURL: {arg.Args[0]}\nMusicDuration: {duration}.");
-        //    }
-        //}
         [ConsoleCommand("musicall")]
         void MusicToAllConsoleCommand(ConsoleSystem.Arg arg)
         {
@@ -516,22 +369,14 @@ namespace Oxide.Plugins
                 Puts("Please enter a valid number.");
                 return;
             }
-        
-            // Stop any previous music
-            foreach (var item in BasePlayer.activePlayerList)
+            else
             {
-                StopMusicPlayer(item);
-            }
-        
-            foreach (var item in BasePlayer.activePlayerList)
-            {
-                bool success = MusicToPlayer(item, arg.Args[0], duration);
-                if (!success)
+                foreach (var item in BasePlayer.activePlayerList)
                 {
-                    Puts($"Failed to play music for player {item.displayName}.");
+                    MusicToPlayer(item, arg.Args[0], duration);
                 }
+                Puts($"Now Playing for all player: \nMusicURL: {arg.Args[0]}\nMusicDuration: {duration}.");
             }
-            Puts($"Now Playing for all player: \nMusicURL: {arg.Args[0]}\nMusicDuration: {duration}.");
         }
         private void MusicToPlayer(BasePlayer player, string MusicURL, float MusicDuration)
         {
