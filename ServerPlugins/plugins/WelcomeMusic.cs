@@ -346,6 +346,20 @@ namespace Oxide.Plugins
                 arg.ReplyWith($"Now playing for player {target.displayName}: \nMusicURL: {arg.Args[1]}\nMusicDuration: {duration}.");
             }
         }
+        public void StopMusicPlayer(BasePlayer player)
+        {
+            if (player == null)
+                return;
+        
+            AudioSource source;
+            if (musicPlayers.TryGetValue(player.userID, out source))
+            {
+                source.Stop();
+                musicPlayers.Remove(player.userID);
+                Destroy(source);
+            }
+        }
+
         [ConsoleCommand("musicall")]
         void MusicToAllConsoleCommand(ConsoleSystem.Arg arg)
         {
@@ -369,14 +383,22 @@ namespace Oxide.Plugins
                 Puts("Please enter a valid number.");
                 return;
             }
-            else
+
+            // Stop any previous music
+            foreach (var item in BasePlayer.activePlayerList)
             {
-                foreach (var item in BasePlayer.activePlayerList)
-                {
-                    MusicToPlayer(item, arg.Args[0], duration);
-                }
-                Puts($"Now Playing for all player: \nMusicURL: {arg.Args[0]}\nMusicDuration: {duration}.");
+                StopMusicPlayer(item);
             }
+
+            foreach (var item in BasePlayer.activePlayerList)
+            {
+                bool success = MusicToPlayer(item, arg.Args[0], duration);
+                if (!success)
+                {
+                    Puts($"Failed to play music for player {item.displayName}.");
+                }
+            }
+            Puts($"Now Playing for all player: \nMusicURL: {arg.Args[0]}\nMusicDuration: {duration}.");
         }
         private void MusicToPlayer(BasePlayer player, string MusicURL, float MusicDuration)
         {
