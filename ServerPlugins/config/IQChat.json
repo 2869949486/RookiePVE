@@ -1,0 +1,545 @@
+{
+  "Setting up player information": {
+    "Function switches": {
+      "Set automatically a prefix to a player when he got the rights to it": true,
+      "Set automatically the color of the nickname to the player when he got the rights to it": true,
+      "Set the chat color automatically to the player when he got the rights to it": true,
+      "Automatically reset the prefix when the player's rights to it expire": true,
+      "Automatically reset the color of the nickname when the player's rights to it expire": true,
+      "Automatically reset the color of the chat when the rights to it from the player expire": true
+    },
+    "Setting Standard Values": {
+      "This prefix will be set if the player entered the server for the first time or in case of expiration of the rights to the prefix that he had earlier": "<color=#68cacd>[初学者]</color>",
+      "This nickname color will be set if the player entered the server for the first time or in case of expiration of the rights to the nickname color that he had earlier": "#ffffff",
+      "This chat color will be set if the player entered the server for the first time or in case of expiration of the rights to the chat color that he had earlier": "#ffffff"
+    }
+  },
+  "Setting options for the player": {
+    "Setting the display of options for player selection": {
+      "Player prefix selection display type - (0 - dropdown list, 1 - slider (Please note that if you have multi-prefix enabled, the dropdown list will be set))": 0,
+      "Display type of player's nickname color selection - (0 - drop-down list, 1 - slider)": 1,
+      "Display type of message color choice for the player - (0 - drop-down list, 1 - slider)": 0,
+      "IQRankSystem : Player rank selection display type - (0 - drop-down list, 1 - slider)": 1
+    },
+    "List and customization of colors for a nickname": [
+      {
+        "Permission": "iqchat.visit",
+        "Argument": "#FFFFFF"
+      },
+      {
+        "Permission": "iqchat.color1",
+        "Argument": "#98F5FF"
+      },
+      {
+        "Permission": "iqchat.color2",
+        "Argument": "#FFDEAD"
+      },
+      {
+        "Permission": "iqchat.color3",
+        "Argument": "#008B8B"
+      },
+      {
+        "Permission": "iqchat.color4",
+        "Argument": "#696969"
+      },
+      {
+        "Permission": "iqchat.color5",
+        "Argument": "#00FF7F"
+      },
+      {
+        "Permission": "iqchat.color6",
+        "Argument": "#008B00"
+      },
+      {
+        "Permission": "iqchat.color7",
+        "Argument": "#66CDAA"
+      },
+      {
+        "Permission": "iqchat.color8",
+        "Argument": "#FFFF00"
+      },
+      {
+        "Permission": "iqchat.color9",
+        "Argument": "#B8860B"
+      },
+      {
+        "Permission": "iqchat.color10",
+        "Argument": "#CD5555"
+      },
+      {
+        "Permission": "iqchat.color11",
+        "Argument": "#FFA500"
+      },
+      {
+        "Permission": "iqchat.color12",
+        "Argument": "#9400D3"
+      },
+      {
+        "Permission": "iqchat.color13",
+        "Argument": "#CD6090"
+      },
+      {
+        "Permission": "iqchat.color14",
+        "Argument": "#8B8682"
+      },
+      {
+        "Permission": "iqchat.color15",
+        "Argument": "#FF34B3"
+      },
+      {
+        "Permission": "iqchat.color16",
+        "Argument": "#6959CD"
+      },
+      {
+        "Permission": "iqchat.color17",
+        "Argument": "#00008B"
+      },
+      {
+        "Permission": "iqchat.color18",
+        "Argument": "#1C1C1C"
+      },
+      {
+        "Permission": "iqchat.color19",
+        "Argument": "#008B8B"
+      },
+      {
+        "Permission": "iqchat.color20",
+        "Argument": "#9AC0CD"
+      },
+      {
+        "Permission": "iqchat.color21",
+        "Argument": "#4A708B"
+      },
+      {
+        "Permission": "iqchat.color22",
+        "Argument": "#473C8B"
+      },
+      {
+        "Permission": "iqchat.color23",
+        "Argument": "#F0FFFF"
+      },
+      {
+        "Permission": "iqchat.color24",
+        "Argument": "#8B795E"
+      }
+    ],
+    "List and customize colors for chat messages": [
+      {
+        "Permission": "iqchat.visit",
+        "Argument": "#FFFFFF"
+      },
+      {
+        "Permission": "iqchat.color1",
+        "Argument": "#98F5FF"
+      },
+      {
+        "Permission": "iqchat.color2",
+        "Argument": "#FFDEAD"
+      },
+      {
+        "Permission": "iqchat.color3",
+        "Argument": "#008B8B"
+      },
+      {
+        "Permission": "iqchat.color4",
+        "Argument": "#696969"
+      },
+      {
+        "Permission": "iqchat.color5",
+        "Argument": "#00FF7F"
+      },
+      {
+        "Permission": "iqchat.color6",
+        "Argument": "#008B00"
+      },
+      {
+        "Permission": "iqchat.color7",
+        "Argument": "#66CDAA"
+      },
+      {
+        "Permission": "iqchat.color8",
+        "Argument": "#FFFF00"
+      },
+      {
+        "Permission": "iqchat.color9",
+        "Argument": "#B8860B"
+      },
+      {
+        "Permission": "iqchat.color10",
+        "Argument": "#CD5555"
+      },
+      {
+        "Permission": "iqchat.color11",
+        "Argument": "#FFA500"
+      },
+      {
+        "Permission": "iqchat.color12",
+        "Argument": "#9400D3"
+      },
+      {
+        "Permission": "iqchat.color13",
+        "Argument": "#CD6090"
+      },
+      {
+        "Permission": "iqchat.color14",
+        "Argument": "#8B8682"
+      },
+      {
+        "Permission": "iqchat.color15",
+        "Argument": "#FF34B3"
+      },
+      {
+        "Permission": "iqchat.color16",
+        "Argument": "#6959CD"
+      },
+      {
+        "Permission": "iqchat.color17",
+        "Argument": "#00008B"
+      },
+      {
+        "Permission": "iqchat.color18",
+        "Argument": "#1C1C1C"
+      },
+      {
+        "Permission": "iqchat.color19",
+        "Argument": "#008B8B"
+      },
+      {
+        "Permission": "iqchat.color20",
+        "Argument": "#9AC0CD"
+      },
+      {
+        "Permission": "iqchat.color21",
+        "Argument": "#4A708B"
+      },
+      {
+        "Permission": "iqchat.color22",
+        "Argument": "#473C8B"
+      },
+      {
+        "Permission": "iqchat.color23",
+        "Argument": "#F0FFFF"
+      },
+      {
+        "Permission": "iqchat.color24",
+        "Argument": "#8B795E"
+      }
+    ],
+    "List and configuration of prefixes in chat": {
+      "Enable support for multiple prefixes at once (true - multiple prefixes can be set/false - only 1 can be set to choose from)": false,
+      "The maximum number of prefixes that can be set at a time (This option only works if setting multiple prefixes is enabled)": 5,
+      "List of prefixes and their settings": [
+        {
+          "Permission": "iqchat.visit",
+          "Argument": "<color=#68CACD>[游客]</color>"
+        },
+        {
+          "Permission": "iqchat.player1",
+          "Argument": "<color=#CC99FF>[伐木工]</color>"
+        },
+        {
+          "Permission": "iqchat.player2",
+          "Argument": "<color=#00EE00>[矿工]</color>"
+        },
+        {
+          "Permission": "iqchat.player3",
+          "Argument": "<color=#FFB90F>[猎手]</color>"
+        },
+        {
+          "Permission": "iqchat.player4",
+          "Argument": "<color=#FF4500>[农场主]</color>"
+        },
+        {
+          "Permission": "iqchat.player5",
+          "Argument": "<color=#9370DB>[手艺人]</color>"
+        },
+        {
+          "Permission": "iqchat.player6",
+          "Argument": "<color=#FF4500>[电工]</color>"
+        },
+        {
+          "Permission": "iqchat.player7",
+          "Argument": "<color=#436EEE>[探险家]</color>"
+        },
+        {
+          "Permission": "iqchat.player8",
+          "Argument": "<color=#8B008B>[枪手]</color>"
+        },
+        {
+          "Permission": "iqchat.player9",
+          "Argument": "<color=#EE6363>[爆破手]</color>"
+        },
+        {
+          "Permission": "iqchat.opprefix",
+          "Argument": "<color=#EE0000>[管理员]</color>"
+        }
+      ]
+    }
+  },
+  "Plugin mute settings": {
+    "Setting up automatic muting": {
+      "Enable automatic muting for forbidden words (true - yes/false - no)": false,
+      "Reason for automatic muting": {
+        "Reason for blocking": "Automatic chat blocking",
+        "Block time (in seconds)": 300
+      }
+    },
+    "Additional setting for logging about mutes in discord": {
+      "Support for logging the last N messages (Discord logging about mutes must be enabled)": false,
+      "How many latest player messages to send in logging": 10
+    },
+    "Reasons to block chat": [
+      {
+        "Reason for blocking": "Aggressive behavior",
+        "Block time (in seconds)": 100
+      },
+      {
+        "Reason for blocking": "Insults",
+        "Block time (in seconds)": 300
+      },
+      {
+        "Reason for blocking": "Insult (repeated violation)",
+        "Block time (in seconds)": 1000
+      },
+      {
+        "Reason for blocking": "Advertising",
+        "Block time (in seconds)": 5000
+      },
+      {
+        "Reason for blocking": "Humiliation",
+        "Block time (in seconds)": 300
+      },
+      {
+        "Reason for blocking": "Spam",
+        "Block time (in seconds)": 60
+      }
+    ],
+    "Reasons to block your voice": [
+      {
+        "Reason for blocking": "Aggressive behavior",
+        "Block time (in seconds)": 100
+      },
+      {
+        "Reason for blocking": "Insults",
+        "Block time (in seconds)": 300
+      },
+      {
+        "Reason for blocking": "Disruption of the event by shouting",
+        "Block time (in seconds)": 300
+      }
+    ]
+  },
+  "Configuring Message Processing": {
+    "Basic settings for chat messages from the plugin": {
+      "Customizing the chat alert format": {
+        "The name of the notification in the chat": "<color=#FF0000>初学者</color><color=#FFFFFF>:</color> ",
+        "Chat alert message color": "#FFFFFF",
+        "Steam64ID for chat avatar": "76561199071028885"
+      },
+      "Setting the mention format in the chat, via @": {
+        "The color of the player mention message in the chat": "#FF7F24",
+        "Sound when receiving and sending a mention via @": "assets/bundled/prefabs/fx/notice/item.select.fx.prefab"
+      },
+      "Additional setting": {
+        "Time after which the message will be deleted from the UI from the administrator": 5,
+        "The size of the message from the player in the chat": 14,
+        "Player nickname size in chat": 14,
+        "The size of the player's prefix in the chat (will be used if <size=N></size> is not set in the prefix itself)": 14
+      }
+    },
+    "Configuring functionality switching in chat": {
+      "Configuring spam protection": {
+        "Enable spam protection (Anti-spam)": false,
+        "Time after which a player can send a message (AntiSpam)": 10,
+        "Additional Anti-Spam settings": {
+          "Enable additional spam protection (Anti-duplicates, duplicate messages)": false,
+          "How many duplicate messages does a player need to make to be confused by the system": 3,
+          "Setting up automatic muting for duplicates": {
+            "Reason for blocking": "Duplicate messages (SPAM)",
+            "Block time (in seconds)": 30
+          }
+        }
+      },
+      "Setting up a temporary chat block for newbies (who have just logged into the server)": {
+        "Newbie protection in PM/R": {
+          "Enable protection?": false,
+          "Newbie Chat Lock Time": 1200
+        },
+        "Newbie protection in global and team chat": {
+          "Enable protection?": false,
+          "Newbie Chat Lock Time": 1200
+        }
+      },
+      "Setting up private messages": {
+        "Enable Private Messages": true,
+        "Sound when receiving a private message": "assets/bundled/prefabs/fx/notice/stack.world.fx.prefab"
+      },
+      "Enable PM ignore for players (/ignore nick or via interface)": true,
+      "Hide the issue of items to the Admin from the chat": true,
+      "Move mute to team chat (In case of a mute, the player will not be able to write even to the team chat)": true
+    },
+    "Player message formatting settings": {
+      "Enable message formatting [Will control caps, message format] (true - yes/false - no)": false,
+      "Use a list of banned words (true - yes/false - no)": true,
+      "The word that will replace the forbidden word": "***",
+      "List of banned words": [
+        "妈",
+        "ma"
+      ],
+      "Nickname controller setup": {
+        "Enable player nickname formatting (message formatting must be enabled)": true,
+        "The word that will replace the forbidden word (You can leave it blank and it will just delete)": "违规昵称",
+        "List of banned nicknames": [
+          "Admin",
+          "Moderator",
+          "Administrator",
+          "Moder",
+          "Owner",
+          "腐竹",
+          "服主",
+          "OP",
+          "OW",
+          "管理",
+          "管理员"
+        ],
+        "List of allowed links in nicknames": [
+          "mysite.com"
+        ]
+      }
+    }
+  },
+  "Setting up chat alerts": {
+    "Setting up chat alerts": {
+      "Enable automatic messages in chat (true - yes/false - no)": true,
+      "Type of automatic messages : true - sequential / false - random": false,
+      "List of automatic messages in chat": {
+        "Setting up Multilingual Messages [Language Code] = Translation Variations": {
+          "en": [
+            "服务器正在制作中，还望多多包涵！\nQQ群：2869949486",
+            "\n——————————  指令帮助   ——————————\n/f   ——   好友系统\n/cs   ——   资源点传送\n/up   ——   拆除、升级工具\n/pf   ——   染色\n/cd   ——   快捷菜单\n/chat   ——   更换称号、聊天颜色\n——————————  指令帮助   ——————————",
+            "若按鼠标中键出现菜单, 可依次输入 /z 与 /z2 取消 中键菜单功能\n 制作中, 尚不完善, 请多多见谅"
+          ]
+        }
+      },
+      "Interval for sending messages to chat (Broadcaster) (in seconds)": 300
+    },
+    "Setting notifications about the status of the player's session": {
+      "When a player is notified about the entry / exit of the player, display his avatar opposite the nickname (true - yes / false - no)": true,
+      "Notify in chat when a player enters (true - yes/false - no)": true,
+      "Enable random notifications when a player from the list enters (true - yes / false - no)": true,
+      "Show the country of the entered player (true - yes/false - no)": true,
+      "Notify when a player enters the chat (selected from the list) (true - yes/false - no)": true,
+      "Enable random player exit notifications (true - yes/false - no)": true,
+      "Display reason for player exit (true - yes/false - no)": true,
+      "Random player entry notifications({0} - player's nickname, {1} - country (if country display is enabled)": {
+        "Setting up Multilingual Messages [Language Code] = Translation Variations": {
+          "en": [
+            "{0} 一蹦一跳的来到了服务器",
+            "来自 {1} 的 {0} 加入了服务器~",
+            "{0} 加入了服务器，掌声欢迎~"
+          ]
+        }
+      },
+      "Random notifications about the exit of the player ({0} - player's nickname, {1} - the reason for the exit (if the reason is enabled)": {
+        "Setting up Multilingual Messages [Language Code] = Translation Variations": {
+          "en": [
+            "{0} 屁滚尿流的离开了服务器",
+            "{0} 离开了服务器，我们期待与ta的再次相遇~",
+            "{0} 被佣兵暴捶后，伤心的离开了服务器"
+          ]
+        }
+      }
+    },
+    "Configuring administrator session status alerts": {
+      "Notify admin on the server in the chat (true - yes/false - no)": false,
+      "Notify about admin leaving the server in chat (true - yes/false - no)": false
+    },
+    "Setting up personal notifications to the player when connecting": {
+      "Enable random message to the player who has logged in (true - yes/false - no)": true,
+      "List of messages to the player when entering": {
+        "Setting up Multilingual Messages [Language Code] = Translation Variations": {
+          "en": [
+            "非常感谢您能够选择我们，期待能给带来一段愉快的时光~",
+            "我们正在加班加点的完善服务器中，些许瑕疵，希望您能够体谅~",
+            "欢迎来到初学者服务器，让我们一起创造传奇！"
+          ]
+        }
+      }
+    }
+  },
+  "Settings Rust+": {
+    "Use Rust+": true,
+    "Title for notification Rust+": "Rookie.Ink"
+  },
+  "Configuring support plugins": {
+    "Settings XLevels": {
+      "Use support XLevels": false
+    },
+    "Settings IQFakeActive": {
+      "Use support IQFakeActive": true
+    },
+    "Settings IQRankSystem": {
+      "Rank display format in chat ( {0} is the user's rank, do not delete this value)": "[{0}]",
+      "Time display format with IQRank System in chat ( {0} is the user's time, do not delete this value)": "[{0}]",
+      "Use support IQRankSystem": false,
+      "Show players their played time next to their rank": true
+    }
+  },
+  "Setting up an answering machine": {
+    "Enable auto-reply? (true - yes/false - no)": true,
+    "Customize Messages [Keyword] = Reply": {
+      "群": {
+        "Setting up Multilingual Messages [Language Code] = Translation Variations": {
+          "en": [
+            "初学者服务器QQ交流群: 1060880680"
+          ]
+        }
+      },
+      "权限": {
+        "Setting up Multilingual Messages [Language Code] = Translation Variations": {
+          "en": [
+            "本服务器非公益服务器, 出售道具、特殊权益乃正常行为, 不接受任何意见或建议!\n管理员不参与游戏, 禁止污蔑或诋毁服务器或管理员, 否则将封禁处理!"
+          ]
+        }
+      },
+      "清档": {
+        "Setting up Multilingual Messages [Language Code] = Translation Variations": {
+          "en": [
+            "服务器为月清地图、年清蓝图，大背包永久保留"
+          ]
+        }
+      },
+      "背包": {
+        "Setting up Multilingual Messages [Language Code] = Translation Variations": {
+          "en": [
+            "服务器为月清地图、年清蓝图，大背包永久保留"
+          ]
+        }
+      }
+    }
+  },
+  "Additional setting": {
+    "Setting up message logging": {
+      "Setting up general chat logging": {
+        "Enable logging (true - yes/false - no)": false,
+        "Webhooks channel for logging": ""
+      },
+      "Setting up team chat logging": {
+        "Enable logging (true - yes/false - no)": false,
+        "Webhooks channel for logging": ""
+      }
+    },
+    "Setting up logging of personal messages of players": {
+      "Enable logging (true - yes/false - no)": false,
+      "Webhooks channel for logging": ""
+    },
+    "Setting up chat/voice lock/unlock logging": {
+      "Enable logging (true - yes/false - no)": false,
+      "Webhooks channel for logging": ""
+    },
+    "Setting up logging of chat commands from players": {
+      "Enable logging (true - yes/false - no)": false,
+      "Webhooks channel for logging": ""
+    }
+  }
+}
