@@ -350,7 +350,7 @@ namespace Oxide.Plugins
         {
             if (player == null)
                 return;
-        
+
             AudioSource source;
             if (musicPlayers.TryGetValue(player.userID, out source))
             {
@@ -400,60 +400,19 @@ namespace Oxide.Plugins
             }
             Puts($"Now Playing for all player: \nMusicURL: {arg.Args[0]}\nMusicDuration: {duration}.");
         }
-        private void MusicToPlayer(BasePlayer player, string MusicURL, float MusicDuration)
+        private bool MusicToPlayer(BasePlayer player, string url, float duration)
         {
-            if (MusicURL == "") return;
-            if (BoomBoxList.ContainsKey(player)) return;
-            if (configData.CanDisable)
+            // Stop previous music player for this player
+            StopMusicPlayer(player);
+            // Create new music player
+            var musicPlayer = StartMusicPlayer(player, url, duration);
+            if (musicPlayer == null)
             {
-                if (joinData.DisablePlayers.Contains(player.userID)) return;
+                return false;
             }
-            SphereEntity Sphere = (SphereEntity)GameManager.server.CreateEntity(SpherePrefab, default(Vector3), default(Quaternion), true);
-            Sphere.Spawn();
-            BoomBoxList.Add(player, Sphere);
-            foreach (var mesh in Sphere.GetComponentsInChildren<MeshCollider>())
-            {
-                UnityEngine.Object.DestroyImmediate(mesh);
-            }
-            DeployableBoomBox BoomBox = GameManager.server.CreateEntity(BoomboxPrefab, default(Vector3), default(Quaternion), true) as DeployableBoomBox;
-            foreach (var mesh in BoomBox.GetComponentsInChildren<MeshCollider>())
-            {
-                UnityEngine.Object.DestroyImmediate(mesh);
-            }
-            BoomBox.SetParent(Sphere);
-            BoomBox.Spawn();
-            BaseCombatEntity CombatEntity = BoomBox.GetComponent<BaseCombatEntity>();
-            if (CombatEntity != null)
-            {
-                CombatEntity.SetMaxHealth(1000000);
-                CombatEntity.SetHealth(1000000);
-                BoomBox.SendNetworkUpdate();
-            }
-            BoomBox.pickup.enabled = false;
-            BoomBox.BoxController.ServerTogglePlay(false);
-            BoomBox.BoxController.AssignedRadioBy = player.OwnerID;
-            Sphere.LerpRadiusTo(0.01f, 1f);
-            timer.Once(1f, () => {
-                if (Sphere != null)
-                    Sphere.SetParent(player);
-                Sphere.transform.localPosition = new Vector3(0, -2f, 0f);
-                BoomBox.BoxController.CurrentRadioIp = MusicURL;
-                BoomBox.BoxController.baseEntity.ClientRPC<string>(null, "OnRadioIPChanged", BoomBox.BoxController.CurrentRadioIp);
-                BoomBox.BoxController.ServerTogglePlay(true);
-                timer.Once(MusicDuration + 1f, () =>
-                {
-                    try
-                    {
-                        if (Sphere != null)
-                        {
-                            Sphere.Kill();
-                            BoomBoxList.Remove(player);
-                        }
-                    }
-                    catch { }
-                });
-            });
-            Sphere.SendNetworkUpdateImmediate();
+            // Add to dictionary
+            musicPlayers[player.userID] = musicPlayer;
+            return true;
         }
         void Unload()
         {
